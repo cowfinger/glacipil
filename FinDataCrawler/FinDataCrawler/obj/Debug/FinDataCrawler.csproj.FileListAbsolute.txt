@@ -1,0 +1,1 @@
+C:\Workplane\FinDataCrawler\FinDataCrawler\bin\Debug\FinDataCrawler.exe.config
