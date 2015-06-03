@@ -8,8 +8,6 @@ namespace FinDataCrawler
 {
     class Program
     {
-        static string UrlPattern = "http://market.finance.sina.com.cn/downxls.php?date={0}&symbol={1}";
-
         static void Main(string[] args)
         {
             var argResult = new ArgumentsParser(args);
