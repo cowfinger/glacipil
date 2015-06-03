@@ -35,6 +35,16 @@ namespace FinDataCrawler
             private set;
         }
 
+        public static void PrintUsage()
+        {
+            Console.WriteLine("FinDataCrawler.exe");
+            foreach (var token in typeof(ArgumentToken).GetEnumNames())
+            {
+                Console.WriteLine("\t--{0}", token);
+            }
+            Console.WriteLine();
+        }
+
         public ArgumentsParser(IEnumerable<string> args)
         {
             this.Arguments = args;
@@ -76,6 +86,10 @@ namespace FinDataCrawler
                     break;
 
                     case 1:
+                    if (!this.ArgumentsTable.ContainsKey(token))
+                    {
+                        return false;
+                    }
                     this.ArgumentsTable.Add(token, argument);
                     break;
                 }

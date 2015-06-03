@@ -12,18 +12,12 @@ namespace FinDataCrawler
 
         static void Main(string[] args)
         {
-        }
-
-        static void DumpData(DateTime time, string symbol)
-        {
-        }
-
-        static void SaveToCache(DateTime time, string symbol)
-        {
-        }
-
-        static void LoadFromCache(DateTime time, string symbol)
-        {
+            var argResult = new ArgumentsParser(args);
+            if (!argResult.Success)
+            {
+                ArgumentsParser.PrintUsage();
+                return;
+            }
         }
     }
 }

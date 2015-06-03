@@ -1,1 +1,2 @@
 C:\Workplane\FinDataCrawler\FinDataCrawler\bin\Debug\FinDataCrawler.exe.config
+C:\Users\wingforce\Workplane\glacipil\FinDataCrawler\FinDataCrawler\bin\Debug\FinDataCrawler.exe.config
